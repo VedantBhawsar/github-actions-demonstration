@@ -5,7 +5,7 @@ const app = express();
 
 
 app.get("/", (req, res)=> {
-  res.send("hello world!")
+  res.send("This app is demostrate the github actions!")
 })
 
 
