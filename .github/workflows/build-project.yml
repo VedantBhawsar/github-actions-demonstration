@@ -1,0 +1,13 @@
+name: Build Project
+on: [push]
+
+jobs: 
+  installation: 
+    runs-on: ubuntu-latest
+    steps: 
+      - name: Show event name
+        run: echo "${{ github.event_name }} event is automatically triggering this job."
+      - name: Show event action
+        run: echo "Event action is ${{ github.repository }}"
+      - name: Installing dependencies
+        run: npm install
