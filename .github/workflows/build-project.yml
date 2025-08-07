@@ -16,3 +16,10 @@ jobs:
 
       - name: Installing dependencies
         run: npm install
+
+  build: 
+    runs-on: ubuntu-latest
+    needs: installation
+    steps: 
+      - name: Show event name
+        run: echo "${{ github.event_name }} event is automatically triggering this job."
